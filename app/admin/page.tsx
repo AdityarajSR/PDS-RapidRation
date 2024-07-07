@@ -22,7 +22,7 @@ const AdminPage = async () => {
           />
         </Link>
 
-        <p className="text-16-semibold">Admin Dashboard</p>
+        <p className="text-16-semibold">PDS DISTRIBUTOR PANEL</p>
       </header>
 
       <main className="admin-main">
