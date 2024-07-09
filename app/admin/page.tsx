@@ -29,7 +29,7 @@ const AdminPage = async () => {
         <section className="w-full space-y-4">
           <h1 className="header">Welcome 👋</h1>
           <p className="text-dark-700">
-            Start the day with managing new appointments
+            Start the day with managing new Requests and doing SEVA
           </p>
         </section>
 
@@ -37,19 +37,19 @@ const AdminPage = async () => {
           <StatCard
             type="appointments"
             count={appointments.scheduledCount}
-            label="Scheduled appointments"
+            label="Scheduled requests"
             icon={"/assets/icons/appointments.svg"}
           />
           <StatCard
             type="pending"
             count={appointments.pendingCount}
-            label="Pending appointments"
+            label="Pending requests"
             icon={"/assets/icons/pending.svg"}
           />
           <StatCard
             type="cancelled"
             count={appointments.cancelledCount}
-            label="Cancelled appointments"
+            label="Cancelled requests"
             icon={"/assets/icons/cancelled.svg"}
           />
         </section>

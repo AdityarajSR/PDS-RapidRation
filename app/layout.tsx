@@ -12,9 +12,9 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-  title: "TakeCare",
+  title: "PDS-RapidRation",
   description:
-    "A healthcare patient management System designed to streamline patient registration, appointment scheduling, and medical records management for healthcare providers.",
+    " A web application to optimize ration shop operations, efficiently managing over 100+ daily transactions, drastically reducing long queues in front of ration shops and enhancing PDS efficiency.",
   icons: {
     icon: "/assets/icons/logo-icon.svg",
   },

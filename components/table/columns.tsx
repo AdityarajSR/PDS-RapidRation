@@ -19,7 +19,7 @@ export const columns: ColumnDef<Appointment>[] = [
   },
   {
     accessorKey: "patient",
-    header: "Patient",
+    header: "UserName",
     cell: ({ row }) => {
       const appointment = row.original;
       return <p className="text-14-medium ">{appointment.patient.name}</p>;
@@ -27,7 +27,7 @@ export const columns: ColumnDef<Appointment>[] = [
   },
   {
     accessorKey: "status",
-    header: "Status",
+    header: "Request Status",
     cell: ({ row }) => {
       const appointment = row.original;
       return (
@@ -39,7 +39,7 @@ export const columns: ColumnDef<Appointment>[] = [
   },
   {
     accessorKey: "schedule",
-    header: "Appointment",
+    header: "Request Details",
     cell: ({ row }) => {
       const appointment = row.original;
       return (
@@ -51,7 +51,7 @@ export const columns: ColumnDef<Appointment>[] = [
   },
   {
     accessorKey: "primaryPhysician",
-    header: "Doctor",
+    header: "Area/Region",
     cell: ({ row }) => {
       const appointment = row.original;
 
@@ -75,7 +75,7 @@ export const columns: ColumnDef<Appointment>[] = [
   },
   {
     id: "actions",
-    header: () => <div className="pl-4">Actions</div>,
+    header: () => <div className="pl-4">Actions(Schdule/Delay)</div>,
     cell: ({ row }) => {
       const appointment = row.original;
 
@@ -86,7 +86,7 @@ export const columns: ColumnDef<Appointment>[] = [
             userId={appointment.userId}
             appointment={appointment}
             type="schedule"
-            title="Schedule Appointment"
+            title="Schedule Invite"
             description="Please confirm the following details to schedule."
           />
           <AppointmentModal
