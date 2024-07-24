@@ -119,13 +119,13 @@ export const AppointmentForm = ({
   let buttonLabel;
   switch (type) {
     case "cancel":
-      buttonLabel = "Cancel Appointment";
+      buttonLabel = "Delay the Request";
       break;
     case "schedule":
-      buttonLabel = "Schedule Appointment";
+      buttonLabel = "Notify for stock availability";
       break;
     default:
-      buttonLabel = "Submit Apppointment";
+      buttonLabel = "Submit Request";
   }
 
   return (
@@ -133,9 +133,9 @@ export const AppointmentForm = ({
       <form onSubmit={form.handleSubmit(onSubmit)} className="flex-1 space-y-6">
         {type === "create" && (
           <section className="mb-12 space-y-4">
-            <h1 className="header">New Appointment</h1>
+            <h1 className="header">Make Your Request</h1>
             <p className="text-dark-700">
-              Request a new appointment right now.
+              Request for a schedule based on First Come First Serve.
             </p>
           </section>
         )}
@@ -146,8 +146,8 @@ export const AppointmentForm = ({
               fieldType={FormFieldType.SELECT}
               control={form.control}
               name="primaryPhysician"
-              label="Doctor"
-              placeholder="Select a doctor"
+              label="Distributor Center"
+              placeholder="Select a center"
             >
               {Doctors.map((doctor, i) => (
                 <SelectItem key={doctor.name + i} value={doctor.name}>
@@ -169,7 +169,7 @@ export const AppointmentForm = ({
               fieldType={FormFieldType.DATE_PICKER}
               control={form.control}
               name="schedule"
-              label="Expected appointment date"
+              label="Mention Date and Time"
               showTimeSelect
               dateFormat="MM/dd/yyyy  -  h:mm aa"
             />
@@ -181,19 +181,19 @@ export const AppointmentForm = ({
                 fieldType={FormFieldType.TEXTAREA}
                 control={form.control}
                 name="reason"
-                label="Appointment reason"
-                placeholder="Annual montly check-up"
+                label="Any questions/requests!!"
+                placeholder="Add your queries here."
                 disabled={type === "schedule"}
               />
 
-              <CustomFormField
+              {/* <CustomFormField
                 fieldType={FormFieldType.TEXTAREA}
                 control={form.control}
                 name="note"
                 label="Comments/notes"
                 placeholder="Prefer afternoon appointments, if possible"
                 disabled={type === "schedule"}
-              />
+              /> */}
             </div>
           </>
         )}
