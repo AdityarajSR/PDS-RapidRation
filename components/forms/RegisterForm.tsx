@@ -355,14 +355,14 @@ const RegisterForm = ({ user }: { user: User }) => {
             fieldType={FormFieldType.CHECKBOX}
             control={form.control}
             name="treatmentConsent"
-            label="I consent to receive treatment for my health condition."
+            label="I consent to receive services and benefits for my ration needs."
           />
 
           <CustomFormField
             fieldType={FormFieldType.CHECKBOX}
             control={form.control}
             name="disclosureConsent"
-            label="I consent to the use and disclosure of my health
+            label="I consent to the use and disclosure of my personal information for the purpose of processing and delivering ration services.
             information for treatment purposes."
           />
 
@@ -370,8 +370,7 @@ const RegisterForm = ({ user }: { user: User }) => {
             fieldType={FormFieldType.CHECKBOX}
             control={form.control}
             name="privacyConsent"
-            label="I acknowledge that I have reviewed and agree to the
-            privacy policy"
+            label="I acknowledge that I have reviewed and agree to the privacy policy."
           />
         </section>
 
