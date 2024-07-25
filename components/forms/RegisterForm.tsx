@@ -362,8 +362,7 @@ const RegisterForm = ({ user }: { user: User }) => {
             fieldType={FormFieldType.CHECKBOX}
             control={form.control}
             name="disclosureConsent"
-            label="I consent to the use and disclosure of my personal information for the purpose of processing and delivering ration services.
-            information for treatment purposes."
+            label="I consent to the use and disclosure of my personal information for the purpose of processing and delivering ration services."
           />
 
           <CustomFormField
