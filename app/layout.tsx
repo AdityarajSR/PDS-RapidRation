@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description:
     " A web application to optimize ration shop operations, efficiently managing over 100+ daily transactions, drastically reducing long queues in front of ration shops and enhancing PDS efficiency.",
   icons: {
-    icon: "/assets/icons/logo-icon.svg",
+    icon: "/assets/icons/Food_Corporation_of_India.svg",
   },
 };
 
