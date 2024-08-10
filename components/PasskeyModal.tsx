@@ -70,7 +70,7 @@ export const PasskeyModal = () => {
       <AlertDialogContent className="shad-alert-dialog">
         <AlertDialogHeader>
           <AlertDialogTitle className="flex items-start justify-between">
-            Admin Access Verification
+            Distributor(Admin) Access Verification
             <Image
               src="/assets/icons/close.svg"
               alt="close"
@@ -81,7 +81,7 @@ export const PasskeyModal = () => {
             />
           </AlertDialogTitle>
           <AlertDialogDescription>
-            To access the admin page, please enter the passkey.
+            To access the Distributor page, please enter the passkey.
           </AlertDialogDescription>
         </AlertDialogHeader>
         <div>
@@ -111,7 +111,7 @@ export const PasskeyModal = () => {
             onClick={(e) => validatePasskey(e)}
             className="shad-primary-btn w-full"
           >
-            Enter Admin Passkey
+            Enter Distributor Passkey
           </AlertDialogAction>
         </AlertDialogFooter>
       </AlertDialogContent>

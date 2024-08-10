@@ -68,7 +68,8 @@ const RequestSuccess = async ({
         </section>
 
         <Button variant="outline" className="shad-primary-btn" asChild>
-          <Link href={`/patients/${userId}/new-appointment`}>
+          <Link href={`/myuser/${userId}/new-appointment`}>
+          {/* <Link href={`/patients/${userId}/new-appointment`}> */}
             Make a new request!
           </Link>
         </Button>

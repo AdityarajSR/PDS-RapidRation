@@ -88,7 +88,8 @@ const RegisterForm = ({ user }: { user: User }) => {
       const newPatient = await registerPatient(patient);
 
       if (newPatient) {
-        router.push(`/patients/${user.$id}/new-appointment`);
+        // router.push(`/patients/${user.$id}/new-appointment`);
+        router.push(`/myuser/${user.$id}/new-appointment`);
       }
     } catch (error) {
       console.log(error);
@@ -206,7 +207,7 @@ const RegisterForm = ({ user }: { user: User }) => {
               control={form.control}
               name="emergencyContactName"
               label="Emergency contact name"
-              placeholder="Guardian's name"
+              placeholder="Contact name"
             />
 
             <CustomFormField
