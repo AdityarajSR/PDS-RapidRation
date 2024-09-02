@@ -204,8 +204,8 @@ export const AppointmentForm = ({
             fieldType={FormFieldType.TEXTAREA}
             control={form.control}
             name="cancellationReason"
-            label="Reason for cancellation"
-            placeholder="Urgent meeting came up"
+            label="Reason for delay"
+            placeholder="Your Reason here"
           />
         )}
 

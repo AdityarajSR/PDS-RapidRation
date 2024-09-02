@@ -40,7 +40,7 @@ export const PatientFormValidation = z.object({
       (emergencyContactNumber) => /^\+\d{10,15}$/.test(emergencyContactNumber),
       "Invalid phone number"
     ),
-  primaryPhysician: z.string().min(2, "Select at least one doctor"),
+  primaryPhysician: z.string().min(2, "Select at least one shop/provider"),
   insuranceProvider: z
     .string().optional(),
   insurancePolicyNumber: z
@@ -56,7 +56,7 @@ export const PatientFormValidation = z.object({
     .boolean()
     .default(false)
     .refine((value) => value === true, {
-      message: "You must consent to treatment in order to proceed",
+      message: "You must consent to purchase/shop in order to proceed",
     }),
   disclosureConsent: z
     .boolean()
